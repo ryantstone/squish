@@ -1,0 +1,6 @@
+framework module Pods_SquishTests {
+  umbrella header "Pods-SquishTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
