@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCB221844F000AB1D30 /* AppDelegate.swift */; };
+		699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCD221844F000AB1D30 /* ViewController.swift */; };
+		699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699A6FCF221844F300AB1D30 /* Assets.xcassets */; };
+		699A6FD3221844F300AB1D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699A6FD1221844F300AB1D30 /* Main.storyboard */; };
+		699A6FDF221844F300AB1D30 /* SquishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FDE221844F300AB1D30 /* SquishTests.swift */; };
+		699A6FEA221844F300AB1D30 /* SquishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FE9221844F300AB1D30 /* SquishUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		699A6FDB221844F300AB1D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 699A6FC0221844EF00AB1D30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 699A6FC7221844F000AB1D30;
+			remoteInfo = Squish;
+		};
+		699A6FE6221844F300AB1D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 699A6FC0221844EF00AB1D30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 699A6FC7221844F000AB1D30;
+			remoteInfo = Squish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		699A6FC8221844F000AB1D30 /* Squish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		699A6FCB221844F000AB1D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		699A6FCD221844F000AB1D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		699A6FCF221844F300AB1D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		699A6FD2221844F300AB1D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		699A6FD4221844F300AB1D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		699A6FD5221844F300AB1D30 /* Squish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Squish.entitlements; sourceTree = "<group>"; };
+		699A6FDA221844F300AB1D30 /* SquishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		699A6FDE221844F300AB1D30 /* SquishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquishTests.swift; sourceTree = "<group>"; };
+		699A6FE0221844F300AB1D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		699A6FE5221844F300AB1D30 /* SquishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		699A6FE9221844F300AB1D30 /* SquishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquishUITests.swift; sourceTree = "<group>"; };
+		699A6FEB221844F300AB1D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		699A6FC5221844F000AB1D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		699A6FD7221844F300AB1D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		699A6FE2221844F300AB1D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		699A6FBF221844EF00AB1D30 = {
+			isa = PBXGroup;
+			children = (
+				699A6FCA221844F000AB1D30 /* Squish */,
+				699A6FDD221844F300AB1D30 /* SquishTests */,
+				699A6FE8221844F300AB1D30 /* SquishUITests */,
+				699A6FC9221844F000AB1D30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		699A6FC9221844F000AB1D30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				699A6FC8221844F000AB1D30 /* Squish.app */,
+				699A6FDA221844F300AB1D30 /* SquishTests.xctest */,
+				699A6FE5221844F300AB1D30 /* SquishUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		699A6FCA221844F000AB1D30 /* Squish */ = {
+			isa = PBXGroup;
+			children = (
+				699A6FCB221844F000AB1D30 /* AppDelegate.swift */,
+				699A6FCD221844F000AB1D30 /* ViewController.swift */,
+				699A6FCF221844F300AB1D30 /* Assets.xcassets */,
+				699A6FD1221844F300AB1D30 /* Main.storyboard */,
+				699A6FD4221844F300AB1D30 /* Info.plist */,
+				699A6FD5221844F300AB1D30 /* Squish.entitlements */,
+			);
+			path = Squish;
+			sourceTree = "<group>";
+		};
+		699A6FDD221844F300AB1D30 /* SquishTests */ = {
+			isa = PBXGroup;
+			children = (
+				699A6FDE221844F300AB1D30 /* SquishTests.swift */,
+				699A6FE0221844F300AB1D30 /* Info.plist */,
+			);
+			path = SquishTests;
+			sourceTree = "<group>";
+		};
+		699A6FE8221844F300AB1D30 /* SquishUITests */ = {
+			isa = PBXGroup;
+			children = (
+				699A6FE9221844F300AB1D30 /* SquishUITests.swift */,
+				699A6FEB221844F300AB1D30 /* Info.plist */,
+			);
+			path = SquishUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		699A6FC7221844F000AB1D30 /* Squish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 699A6FEE221844F300AB1D30 /* Build configuration list for PBXNativeTarget "Squish" */;
+			buildPhases = (
+				699A6FC4221844F000AB1D30 /* Sources */,
+				699A6FC5221844F000AB1D30 /* Frameworks */,
+				699A6FC6221844F000AB1D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Squish;
+			productName = Squish;
+			productReference = 699A6FC8221844F000AB1D30 /* Squish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		699A6FD9221844F300AB1D30 /* SquishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 699A6FF1221844F300AB1D30 /* Build configuration list for PBXNativeTarget "SquishTests" */;
+			buildPhases = (
+				699A6FD6221844F300AB1D30 /* Sources */,
+				699A6FD7221844F300AB1D30 /* Frameworks */,
+				699A6FD8221844F300AB1D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				699A6FDC221844F300AB1D30 /* PBXTargetDependency */,
+			);
+			name = SquishTests;
+			productName = SquishTests;
+			productReference = 699A6FDA221844F300AB1D30 /* SquishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		699A6FE4221844F300AB1D30 /* SquishUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 699A6FF4221844F300AB1D30 /* Build configuration list for PBXNativeTarget "SquishUITests" */;
+			buildPhases = (
+				699A6FE1221844F300AB1D30 /* Sources */,
+				699A6FE2221844F300AB1D30 /* Frameworks */,
+				699A6FE3221844F300AB1D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				699A6FE7221844F300AB1D30 /* PBXTargetDependency */,
+			);
+			name = SquishUITests;
+			productName = SquishUITests;
+			productReference = 699A6FE5221844F300AB1D30 /* SquishUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		699A6FC0221844EF00AB1D30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Sharkmaul;
+				TargetAttributes = {
+					699A6FC7221844F000AB1D30 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					699A6FD9221844F300AB1D30 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 699A6FC7221844F000AB1D30;
+					};
+					699A6FE4221844F300AB1D30 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 699A6FC7221844F000AB1D30;
+					};
+				};
+			};
+			buildConfigurationList = 699A6FC3221844EF00AB1D30 /* Build configuration list for PBXProject "Squish" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 699A6FBF221844EF00AB1D30;
+			productRefGroup = 699A6FC9221844F000AB1D30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				699A6FC7221844F000AB1D30 /* Squish */,
+				699A6FD9221844F300AB1D30 /* SquishTests */,
+				699A6FE4221844F300AB1D30 /* SquishUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		699A6FC6221844F000AB1D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */,
+				699A6FD3221844F300AB1D30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		699A6FD8221844F300AB1D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		699A6FE3221844F300AB1D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		699A6FC4221844F000AB1D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */,
+				699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		699A6FD6221844F300AB1D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699A6FDF221844F300AB1D30 /* SquishTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		699A6FE1221844F300AB1D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699A6FEA221844F300AB1D30 /* SquishUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		699A6FDC221844F300AB1D30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 699A6FC7221844F000AB1D30 /* Squish */;
+			targetProxy = 699A6FDB221844F300AB1D30 /* PBXContainerItemProxy */;
+		};
+		699A6FE7221844F300AB1D30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 699A6FC7221844F000AB1D30 /* Squish */;
+			targetProxy = 699A6FE6221844F300AB1D30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		699A6FD1221844F300AB1D30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				699A6FD2221844F300AB1D30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		699A6FEC221844F300AB1D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		699A6FED221844F300AB1D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		699A6FEF221844F300AB1D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Squish/Squish.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FV9NULGJG4;
+				INFOPLIST_FILE = Squish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.Squish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		699A6FF0221844F300AB1D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Squish/Squish.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FV9NULGJG4;
+				INFOPLIST_FILE = Squish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.Squish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		699A6FF2221844F300AB1D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FV9NULGJG4;
+				INFOPLIST_FILE = SquishTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.SquishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Squish.app/Contents/MacOS/Squish";
+			};
+			name = Debug;
+		};
+		699A6FF3221844F300AB1D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FV9NULGJG4;
+				INFOPLIST_FILE = SquishTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.SquishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Squish.app/Contents/MacOS/Squish";
+			};
+			name = Release;
+		};
+		699A6FF5221844F300AB1D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FV9NULGJG4;
+				INFOPLIST_FILE = SquishUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.SquishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Squish;
+			};
+			name = Debug;
+		};
+		699A6FF6221844F300AB1D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FV9NULGJG4;
+				INFOPLIST_FILE = SquishUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.SquishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Squish;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		699A6FC3221844EF00AB1D30 /* Build configuration list for PBXProject "Squish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699A6FEC221844F300AB1D30 /* Debug */,
+				699A6FED221844F300AB1D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		699A6FEE221844F300AB1D30 /* Build configuration list for PBXNativeTarget "Squish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699A6FEF221844F300AB1D30 /* Debug */,
+				699A6FF0221844F300AB1D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		699A6FF1221844F300AB1D30 /* Build configuration list for PBXNativeTarget "SquishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699A6FF2221844F300AB1D30 /* Debug */,
+				699A6FF3221844F300AB1D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		699A6FF4221844F300AB1D30 /* Build configuration list for PBXNativeTarget "SquishUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699A6FF5221844F300AB1D30 /* Debug */,
+				699A6FF6221844F300AB1D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 699A6FC0221844EF00AB1D30 /* Project object */;
+}
