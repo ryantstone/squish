@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090CFABAFBDFA3EA7155AA86 /* Pods_SquishTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A90D94F8589E5F2AE90B2 /* Pods_SquishTests.framework */; };
+		26533DB8CE8566FA85EF9AAB /* Pods_SquishUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */; };
 		699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCB221844F000AB1D30 /* AppDelegate.swift */; };
 		699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCD221844F000AB1D30 /* ViewController.swift */; };
 		699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699A6FCF221844F300AB1D30 /* Assets.xcassets */; };
 		699A6FD3221844F300AB1D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699A6FD1221844F300AB1D30 /* Main.storyboard */; };
 		699A6FDF221844F300AB1D30 /* SquishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FDE221844F300AB1D30 /* SquishTests.swift */; };
 		699A6FEA221844F300AB1D30 /* SquishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FE9221844F300AB1D30 /* SquishUITests.swift */; };
+		7C51FB5A81B113CA0C709B1E /* Pods_Squish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B102C82906A43E9BBB2240F /* Pods-Squish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.release.xcconfig"; sourceTree = "<group>"; };
+		188A90D94F8589E5F2AE90B2 /* Pods_SquishTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquishTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C8952534DD7AA2131329BE /* Pods-SquishUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishUITests/Pods-SquishUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59F479F50B9CE4D152BB95E9 /* Pods-SquishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.release.xcconfig"; sourceTree = "<group>"; };
 		699A6FC8221844F000AB1D30 /* Squish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A6FCB221844F000AB1D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699A6FCD221844F000AB1D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +53,11 @@
 		699A6FE5221844F300AB1D30 /* SquishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A6FE9221844F300AB1D30 /* SquishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquishUITests.swift; sourceTree = "<group>"; };
 		699A6FEB221844F300AB1D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D64750C7ED4A894C4C5F49C /* Pods-Squish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.debug.xcconfig"; sourceTree = "<group>"; };
+		A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquishUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E32EDBADA9203BE0A070ED /* Pods-SquishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1F73E48A744D88DEE5E6F7 /* Pods-SquishUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishUITests/Pods-SquishUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C51FB5A81B113CA0C709B1E /* Pods_Squish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090CFABAFBDFA3EA7155AA86 /* Pods_SquishTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +81,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26533DB8CE8566FA85EF9AAB /* Pods_SquishUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E389C98B2ED1389A9673DCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */,
+				188A90D94F8589E5F2AE90B2 /* Pods_SquishTests.framework */,
+				A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		699A6FBF221844EF00AB1D30 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +105,8 @@
 				699A6FDD221844F300AB1D30 /* SquishTests */,
 				699A6FE8221844F300AB1D30 /* SquishUITests */,
 				699A6FC9221844F000AB1D30 /* Products */,
+				721196D6840BA6E26019C11D /* Pods */,
+				1E389C98B2ED1389A9673DCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +151,19 @@
 			path = SquishUITests;
 			sourceTree = "<group>";
 		};
+		721196D6840BA6E26019C11D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D64750C7ED4A894C4C5F49C /* Pods-Squish.debug.xcconfig */,
+				0B102C82906A43E9BBB2240F /* Pods-Squish.release.xcconfig */,
+				D3E32EDBADA9203BE0A070ED /* Pods-SquishTests.debug.xcconfig */,
+				59F479F50B9CE4D152BB95E9 /* Pods-SquishTests.release.xcconfig */,
+				DB1F73E48A744D88DEE5E6F7 /* Pods-SquishUITests.debug.xcconfig */,
+				47C8952534DD7AA2131329BE /* Pods-SquishUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 699A6FEE221844F300AB1D30 /* Build configuration list for PBXNativeTarget "Squish" */;
 			buildPhases = (
+				8B358130C974659377506807 /* [CP] Check Pods Manifest.lock */,
 				699A6FC4221844F000AB1D30 /* Sources */,
 				699A6FC5221844F000AB1D30 /* Frameworks */,
 				699A6FC6221844F000AB1D30 /* Resources */,
+				4789B0EE3173F4B862E6813F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 699A6FF1221844F300AB1D30 /* Build configuration list for PBXNativeTarget "SquishTests" */;
 			buildPhases = (
+				6061846704941BC8EF896913 /* [CP] Check Pods Manifest.lock */,
 				699A6FD6221844F300AB1D30 /* Sources */,
 				699A6FD7221844F300AB1D30 /* Frameworks */,
 				699A6FD8221844F300AB1D30 /* Resources */,
@@ -166,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 699A6FF4221844F300AB1D30 /* Build configuration list for PBXNativeTarget "SquishUITests" */;
 			buildPhases = (
+				FD0213B4B6C66C70EE7EEE67 /* [CP] Check Pods Manifest.lock */,
 				699A6FE1221844F300AB1D30 /* Sources */,
 				699A6FE2221844F300AB1D30 /* Frameworks */,
 				699A6FE3221844F300AB1D30 /* Resources */,
@@ -248,6 +292,101 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4789B0EE3173F4B862E6813F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Squish/Pods-Squish-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Squish/Pods-Squish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6061846704941BC8EF896913 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquishTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B358130C974659377506807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Squish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD0213B4B6C66C70EE7EEE67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquishUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		699A6FC4221844F000AB1D30 /* Sources */ = {
@@ -419,6 +558,7 @@
 		};
 		699A6FEF221844F300AB1D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D64750C7ED4A894C4C5F49C /* Pods-Squish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Squish/Squish.entitlements;
@@ -438,6 +578,7 @@
 		};
 		699A6FF0221844F300AB1D30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B102C82906A43E9BBB2240F /* Pods-Squish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Squish/Squish.entitlements;
@@ -457,6 +598,7 @@
 		};
 		699A6FF2221844F300AB1D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E32EDBADA9203BE0A070ED /* Pods-SquishTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -478,6 +620,7 @@
 		};
 		699A6FF3221844F300AB1D30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F479F50B9CE4D152BB95E9 /* Pods-SquishTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +642,7 @@
 		};
 		699A6FF5221844F300AB1D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1F73E48A744D88DEE5E6F7 /* Pods-SquishUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -519,6 +663,7 @@
 		};
 		699A6FF6221844F300AB1D30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C8952534DD7AA2131329BE /* Pods-SquishUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
