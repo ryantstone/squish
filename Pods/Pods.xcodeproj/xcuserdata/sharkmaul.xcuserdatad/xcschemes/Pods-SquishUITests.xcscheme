@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EF13866E9D7BD597181781CB6168E40"
+               BlueprintIdentifier = "8DC641CCE767BECAA950335E9FE4716C"
                BuildableName = "Pods_SquishUITests.framework"
                BlueprintName = "Pods-SquishUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EF13866E9D7BD597181781CB6168E40"
+            BlueprintIdentifier = "8DC641CCE767BECAA950335E9FE4716C"
             BuildableName = "Pods_SquishUITests.framework"
             BlueprintName = "Pods-SquishUITests"
             ReferencedContainer = "container:Pods.xcodeproj">
