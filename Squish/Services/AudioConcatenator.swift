@@ -8,9 +8,11 @@ class MP3Joiner {
         return self.files.sorted(by: { $0.absoluteString.compare($1.absoluteString,
                                                                  options: .numeric) == .orderedAscending })
     }
+    let metadata: MetadataViewModel
     
-    init(_ files: [URL]) {
-        self.files = files
+    init(_ files: [URL], metadata: MetadataViewModel) {
+        self.files    = files
+        self.metadata = metadata
     }
     
     func perform(completion: @escaping (Result<AVAsset>) -> ()) {
@@ -21,7 +23,7 @@ class MP3Joiner {
     // FIXME: CLASS SHOULD BE BROKEN INTO 3 PARTS JOINING, EXPORTING, META DATA WRITING
     private func join() -> AVMutableComposition {
         let asset            = AVMutableComposition()
-        let totalFileCount  = Double(sortedFiles.count)
+        let totalFileCount   = Double(sortedFiles.count)
         let compositionTrack = asset.addMutableTrack(withMediaType: AVMediaType.audio,
                                                      preferredTrackID: CMPersistentTrackID())
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
@@ -44,7 +46,7 @@ class MP3Joiner {
     }
     
     private func export(_ asset: AVMutableComposition, completion: @escaping (Result<AVAsset>) -> ()) {
-        let savePathUrl : URL = URL(fileURLWithPath: NSHomeDirectory() + "/Desktop/newFile.m4b")
+        let savePathUrl : URL = URL(fileURLWithPath: NSHomeDirectory() + "/Desktop/newFile.m4a")
         guard let export: AVAssetExportSession = AVAssetExportSession(asset: asset, presetName: AVAssetExportPresetAppleM4A) else {
             completion(.error("Export Failure"))
             return
@@ -52,8 +54,8 @@ class MP3Joiner {
         
         export.outputFileType               = AVFileType.m4a
         export.outputURL                    = savePathUrl
-        export.shouldOptimizeForNetworkUse  = true
-        
+        export.shouldOptimizeForNetworkUse  = false
+//        export.metadata = MetadataWriter(metadata: metadata).metadataItems
         export.exportAsynchronously { () -> Void in
             switch export.status {
                 

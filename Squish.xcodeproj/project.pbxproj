@@ -9,18 +9,25 @@
 /* Begin PBXBuildFile section */
 		090CFABAFBDFA3EA7155AA86 /* Pods_SquishTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A90D94F8589E5F2AE90B2 /* Pods_SquishTests.framework */; };
 		26533DB8CE8566FA85EF9AAB /* Pods_SquishUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */; };
+		6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908A26722200BF300599275 /* MetadataViewModel.swift */; };
 		699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCB221844F000AB1D30 /* AppDelegate.swift */; };
 		699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCD221844F000AB1D30 /* ViewController.swift */; };
 		699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699A6FCF221844F300AB1D30 /* Assets.xcassets */; };
 		699A6FD3221844F300AB1D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699A6FD1221844F300AB1D30 /* Main.storyboard */; };
 		699A6FDF221844F300AB1D30 /* SquishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FDE221844F300AB1D30 /* SquishTests.swift */; };
 		699A6FEA221844F300AB1D30 /* SquishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FE9221844F300AB1D30 /* SquishUITests.swift */; };
-		7C51FB5A81B113CA0C709B1E /* Pods_Squish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */; };
 		699A6FF92218452600AB1D30 /* AudioConcatenator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FF82218452600AB1D30 /* AudioConcatenator.swift */; };
 		699A6FFE221845BF00AB1D30 /* ImporterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FFD221845BF00AB1D30 /* ImporterViewController.swift */; };
 		699A7001221852B600AB1D30 /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A7000221852B600AB1D30 /* FileListViewController.swift */; };
-		699A7005221873B000AB1D30 /* MetadataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A7003221873B000AB1D30 /* MetadataViewController.swift */; };
-		699A7006221873B000AB1D30 /* MetadataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699A7004221873B000AB1D30 /* MetadataViewController.xib */; };
+		699A7005221873B000AB1D30 /* MetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A7003221873B000AB1D30 /* MetadataView.swift */; };
+		699A7006221873B000AB1D30 /* MetadataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699A7004221873B000AB1D30 /* MetadataView.xib */; };
+		69B9A1CC2225540F008BBDCC /* MetadataWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */; };
+		69FE238022188EDE00AC64D0 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE237F22188EDE00AC64D0 /* NSView.swift */; };
+		69FE23822219C52B00AC64D0 /* DropzoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23812219C52B00AC64D0 /* DropzoneView.swift */; };
+		69FE23842219C58D00AC64D0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23832219C58D00AC64D0 /* Array.swift */; };
+		69FE23882219C71000AC64D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23862219C71000AC64D0 /* MainViewController.swift */; };
+		69FE238B221AC99F00AC64D0 /* ImporterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */; };
+		7C51FB5A81B113CA0C709B1E /* Pods_Squish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B102C82906A43E9BBB2240F /* Pods-Squish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.release.xcconfig"; sourceTree = "<group>"; };
 		188A90D94F8589E5F2AE90B2 /* Pods_SquishTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquishTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47C8952534DD7AA2131329BE /* Pods-SquishUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishUITests/Pods-SquishUITests.release.xcconfig"; sourceTree = "<group>"; };
-		59F479F50B9CE4D152BB95E9 /* Pods-SquishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A9DC7AE7DE964C599796C93 /* Pods-Squish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.release.xcconfig"; sourceTree = "<group>"; };
+		3D08147D19AC1A0FE0A7E5A7 /* Pods-SquishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.release.xcconfig"; sourceTree = "<group>"; };
+		585A0F8FFEE54473892AAB83 /* Pods-Squish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.debug.xcconfig"; sourceTree = "<group>"; };
+		6908A26722200BF300599275 /* MetadataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataViewModel.swift; sourceTree = "<group>"; };
 		699A6FC8221844F000AB1D30 /* Squish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A6FCB221844F000AB1D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699A6FCD221844F000AB1D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,16 +66,22 @@
 		699A6FE5221844F300AB1D30 /* SquishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A6FE9221844F300AB1D30 /* SquishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquishUITests.swift; sourceTree = "<group>"; };
 		699A6FEB221844F300AB1D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D64750C7ED4A894C4C5F49C /* Pods-Squish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.debug.xcconfig"; sourceTree = "<group>"; };
-		A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquishUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3E32EDBADA9203BE0A070ED /* Pods-SquishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB1F73E48A744D88DEE5E6F7 /* Pods-SquishUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishUITests/Pods-SquishUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		699A6FF82218452600AB1D30 /* AudioConcatenator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioConcatenator.swift; sourceTree = "<group>"; };
 		699A6FFD221845BF00AB1D30 /* ImporterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImporterViewController.swift; sourceTree = "<group>"; };
 		699A7000221852B600AB1D30 /* FileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
-		699A7003221873B000AB1D30 /* MetadataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataViewController.swift; sourceTree = "<group>"; };
-		699A7004221873B000AB1D30 /* MetadataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetadataViewController.xib; sourceTree = "<group>"; };
+		699A7003221873B000AB1D30 /* MetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataView.swift; sourceTree = "<group>"; };
+		699A7004221873B000AB1D30 /* MetadataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetadataView.xib; sourceTree = "<group>"; };
+		69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataWriter.swift; sourceTree = "<group>"; };
+		69FE237F22188EDE00AC64D0 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
+		69FE23812219C52B00AC64D0 /* DropzoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropzoneView.swift; sourceTree = "<group>"; };
+		69FE23832219C58D00AC64D0 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		69FE23862219C71000AC64D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImporterViewController.xib; sourceTree = "<group>"; };
+		99CB20B4403C016ED52C7065 /* Pods-SquishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquishUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E677EDF12FCA530010718E /* Pods-SquishUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishUITests/Pods-SquishUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D68EBAF0A38271D8EFBEC1A6 /* Pods-SquishUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishUITests/Pods-SquishUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +129,8 @@
 				699A6FDD221844F300AB1D30 /* SquishTests */,
 				699A6FE8221844F300AB1D30 /* SquishUITests */,
 				699A6FC9221844F000AB1D30 /* Products */,
-				721196D6840BA6E26019C11D /* Pods */,
 				1E389C98B2ED1389A9673DCA /* Frameworks */,
+				F1E77C4B4C0E1601FE903DEE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +147,7 @@
 		699A6FCA221844F000AB1D30 /* Squish */ = {
 			isa = PBXGroup;
 			children = (
+				69FE237E22188ECD00AC64D0 /* Extensions */,
 				699A6FFB2218454C00AB1D30 /* Other */,
 				699A6FFA2218453D00AB1D30 /* Views */,
 				699A6FF72218450300AB1D30 /* Services */,
@@ -158,22 +173,11 @@
 			path = SquishUITests;
 			sourceTree = "<group>";
 		};
-		721196D6840BA6E26019C11D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8D64750C7ED4A894C4C5F49C /* Pods-Squish.debug.xcconfig */,
-				0B102C82906A43E9BBB2240F /* Pods-Squish.release.xcconfig */,
-				D3E32EDBADA9203BE0A070ED /* Pods-SquishTests.debug.xcconfig */,
-				59F479F50B9CE4D152BB95E9 /* Pods-SquishTests.release.xcconfig */,
-				DB1F73E48A744D88DEE5E6F7 /* Pods-SquishUITests.debug.xcconfig */,
-				47C8952534DD7AA2131329BE /* Pods-SquishUITests.release.xcconfig */,
-			);
-			name = Pods;
-      };
 		699A6FF72218450300AB1D30 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				699A6FF82218452600AB1D30 /* AudioConcatenator.swift */,
+				69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -181,9 +185,11 @@
 		699A6FFA2218453D00AB1D30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				699A70022218736000AB1D30 /* Nibs */,
+				69FE23852219C6FF00AC64D0 /* MainView */,
+				699A70022218736000AB1D30 /* MetadataViewController */,
 				699A6FFF221852A500AB1D30 /* FileList */,
 				699A6FFC221845AF00AB1D30 /* Importer */,
+				69FE23812219C52B00AC64D0 /* DropzoneView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				699A6FFD221845BF00AB1D30 /* ImporterViewController.swift */,
+				69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */,
 			);
 			path = Importer;
 			sourceTree = "<group>";
@@ -217,13 +224,44 @@
 			path = FileList;
 			sourceTree = "<group>";
 		};
-		699A70022218736000AB1D30 /* Nibs */ = {
+		699A70022218736000AB1D30 /* MetadataViewController */ = {
 			isa = PBXGroup;
 			children = (
-				699A7003221873B000AB1D30 /* MetadataViewController.swift */,
-				699A7004221873B000AB1D30 /* MetadataViewController.xib */,
+				699A7003221873B000AB1D30 /* MetadataView.swift */,
+				699A7004221873B000AB1D30 /* MetadataView.xib */,
+				6908A26722200BF300599275 /* MetadataViewModel.swift */,
 			);
-			path = Nibs;
+			path = MetadataViewController;
+			sourceTree = "<group>";
+		};
+		69FE237E22188ECD00AC64D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				69FE237F22188EDE00AC64D0 /* NSView.swift */,
+				69FE23832219C58D00AC64D0 /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		69FE23852219C6FF00AC64D0 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				69FE23862219C71000AC64D0 /* MainViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		F1E77C4B4C0E1601FE903DEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				585A0F8FFEE54473892AAB83 /* Pods-Squish.debug.xcconfig */,
+				1A9DC7AE7DE964C599796C93 /* Pods-Squish.release.xcconfig */,
+				99CB20B4403C016ED52C7065 /* Pods-SquishTests.debug.xcconfig */,
+				3D08147D19AC1A0FE0A7E5A7 /* Pods-SquishTests.release.xcconfig */,
+				B7E677EDF12FCA530010718E /* Pods-SquishUITests.debug.xcconfig */,
+				D68EBAF0A38271D8EFBEC1A6 /* Pods-SquishUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +275,6 @@
 				699A6FC4221844F000AB1D30 /* Sources */,
 				699A6FC5221844F000AB1D30 /* Frameworks */,
 				699A6FC6221844F000AB1D30 /* Resources */,
-				4789B0EE3173F4B862E6813F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,7 +371,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				699A7006221873B000AB1D30 /* MetadataViewController.xib in Resources */,
+				69FE238B221AC99F00AC64D0 /* ImporterViewController.xib in Resources */,
+				699A7006221873B000AB1D30 /* MetadataView.xib in Resources */,
 				699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */,
 				699A6FD3221844F300AB1D30 /* Main.storyboard in Resources */,
 			);
@@ -357,32 +395,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4789B0EE3173F4B862E6813F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Squish/Pods-Squish-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Squish/Pods-Squish-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6061846704941BC8EF896913 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,12 +468,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FE23842219C58D00AC64D0 /* Array.swift in Sources */,
+				69B9A1CC2225540F008BBDCC /* MetadataWriter.swift in Sources */,
+				69FE238022188EDE00AC64D0 /* NSView.swift in Sources */,
+				69FE23822219C52B00AC64D0 /* DropzoneView.swift in Sources */,
 				699A6FFE221845BF00AB1D30 /* ImporterViewController.swift in Sources */,
 				699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */,
 				699A7001221852B600AB1D30 /* FileListViewController.swift in Sources */,
 				699A6FF92218452600AB1D30 /* AudioConcatenator.swift in Sources */,
 				699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */,
-				699A7005221873B000AB1D30 /* MetadataViewController.swift in Sources */,
+				6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */,
+				699A7005221873B000AB1D30 /* MetadataView.swift in Sources */,
+				69FE23882219C71000AC64D0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +643,7 @@
 		};
 		699A6FEF221844F300AB1D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D64750C7ED4A894C4C5F49C /* Pods-Squish.debug.xcconfig */;
+			baseConfigurationReference = 585A0F8FFEE54473892AAB83 /* Pods-Squish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Squish/Other/Squish.entitlements;
@@ -645,7 +663,7 @@
 		};
 		699A6FF0221844F300AB1D30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B102C82906A43E9BBB2240F /* Pods-Squish.release.xcconfig */;
+			baseConfigurationReference = 1A9DC7AE7DE964C599796C93 /* Pods-Squish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Squish/Other/Squish.entitlements;
@@ -665,7 +683,7 @@
 		};
 		699A6FF2221844F300AB1D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3E32EDBADA9203BE0A070ED /* Pods-SquishTests.debug.xcconfig */;
+			baseConfigurationReference = 99CB20B4403C016ED52C7065 /* Pods-SquishTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -687,7 +705,7 @@
 		};
 		699A6FF3221844F300AB1D30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59F479F50B9CE4D152BB95E9 /* Pods-SquishTests.release.xcconfig */;
+			baseConfigurationReference = 3D08147D19AC1A0FE0A7E5A7 /* Pods-SquishTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -709,7 +727,7 @@
 		};
 		699A6FF5221844F300AB1D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB1F73E48A744D88DEE5E6F7 /* Pods-SquishUITests.debug.xcconfig */;
+			baseConfigurationReference = B7E677EDF12FCA530010718E /* Pods-SquishUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -730,7 +748,7 @@
 		};
 		699A6FF6221844F300AB1D30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47C8952534DD7AA2131329BE /* Pods-SquishUITests.release.xcconfig */;
+			baseConfigurationReference = D68EBAF0A38271D8EFBEC1A6 /* Pods-SquishUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
