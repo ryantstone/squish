@@ -1,6 +1,4 @@
-import Foundation
-import RxSwift
-import RxCocoa
+import Cocoa
 
 // FIXME: SHOULD THIS BE RENAMED?
 class MetadataViewModel {
