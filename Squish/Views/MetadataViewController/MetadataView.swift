@@ -1,5 +1,3 @@
-import RxSwift
-import RxCocoa
 import Cocoa
 
 class MetadataView: NSViewController {
@@ -16,7 +14,6 @@ class MetadataView: NSViewController {
     @IBOutlet weak var exportButton: NSButton!
 
     var delegate: MetadataViewDelegate?
-    var disposeBag = DisposeBag()
     var viewModel  = MetadataViewModel()
     
     override func viewDidLoad() {
@@ -52,20 +49,4 @@ extension MetadataView: NSTextFieldDelegate {
 
 protocol MetadataViewDelegate {
     func didTapExport(metadata: MetadataViewModel)
-}
-
-
-// FIXME: MOVE ME
-infix operator <-> : DefaultPrecedence
-func <-> <T>(property: ControlProperty<T>, variable: Variable<T>) -> Disposable {
-    let bindToUIDisposable = variable.asObservable()
-        .bind(to: property)
-    let bindToVariable = property
-        .subscribe(onNext: { n in
-            variable.value = n
-        }, onCompleted:  {
-            bindToUIDisposable.dispose()
-        })
-    
-    return CompositeDisposable(bindToUIDisposable, bindToVariable)
 }

@@ -10,6 +10,7 @@
 		090CFABAFBDFA3EA7155AA86 /* Pods_SquishTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A90D94F8589E5F2AE90B2 /* Pods_SquishTests.framework */; };
 		26533DB8CE8566FA85EF9AAB /* Pods_SquishUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */; };
 		6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908A26722200BF300599275 /* MetadataViewModel.swift */; };
+		6914043722390D8A009D2E53 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6914043622390D8A009D2E53 /* ffmpeg */; };
 		699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCB221844F000AB1D30 /* AppDelegate.swift */; };
 		699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCD221844F000AB1D30 /* ViewController.swift */; };
 		699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699A6FCF221844F300AB1D30 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		3D08147D19AC1A0FE0A7E5A7 /* Pods-SquishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.release.xcconfig"; sourceTree = "<group>"; };
 		585A0F8FFEE54473892AAB83 /* Pods-Squish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.debug.xcconfig"; sourceTree = "<group>"; };
 		6908A26722200BF300599275 /* MetadataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataViewModel.swift; sourceTree = "<group>"; };
+		6914043622390D8A009D2E53 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
 		699A6FC8221844F000AB1D30 /* Squish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A6FCB221844F000AB1D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699A6FCD221844F000AB1D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		699A6FBF221844EF00AB1D30 = {
 			isa = PBXGroup;
 			children = (
+				6914043622390D8A009D2E53 /* ffmpeg */,
 				699A6FCA221844F000AB1D30 /* Squish */,
 				699A6FDD221844F300AB1D30 /* SquishTests */,
 				699A6FE8221844F300AB1D30 /* SquishUITests */,
@@ -371,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6914043722390D8A009D2E53 /* ffmpeg in Resources */,
 				69FE238B221AC99F00AC64D0 /* ImporterViewController.xib in Resources */,
 				699A7006221873B000AB1D30 /* MetadataView.xib in Resources */,
 				699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */,
@@ -657,7 +661,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.Squish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -677,7 +681,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.Squish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
