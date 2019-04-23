@@ -23,6 +23,8 @@
 		699A7005221873B000AB1D30 /* MetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A7003221873B000AB1D30 /* MetadataView.swift */; };
 		699A7006221873B000AB1D30 /* MetadataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699A7004221873B000AB1D30 /* MetadataView.xib */; };
 		69B9A1CC2225540F008BBDCC /* MetadataWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */; };
+		69F6D0892262566F00B42E9F /* ProgressCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6D0882262566F00B42E9F /* ProgressCalculationService.swift */; };
+		69F6D08C2262789A00B42E9F /* ProgressCalculationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6D08B2262789A00B42E9F /* ProgressCalculationServiceTest.swift */; };
 		69FE238022188EDE00AC64D0 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE237F22188EDE00AC64D0 /* NSView.swift */; };
 		69FE23822219C52B00AC64D0 /* DropzoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23812219C52B00AC64D0 /* DropzoneView.swift */; };
 		69FE23842219C58D00AC64D0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23832219C58D00AC64D0 /* Array.swift */; };
@@ -74,6 +76,8 @@
 		699A7003221873B000AB1D30 /* MetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataView.swift; sourceTree = "<group>"; };
 		699A7004221873B000AB1D30 /* MetadataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetadataView.xib; sourceTree = "<group>"; };
 		69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataWriter.swift; sourceTree = "<group>"; };
+		69F6D0882262566F00B42E9F /* ProgressCalculationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCalculationService.swift; sourceTree = "<group>"; };
+		69F6D08B2262789A00B42E9F /* ProgressCalculationServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCalculationServiceTest.swift; sourceTree = "<group>"; };
 		69FE237F22188EDE00AC64D0 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
 		69FE23812219C52B00AC64D0 /* DropzoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropzoneView.swift; sourceTree = "<group>"; };
 		69FE23832219C58D00AC64D0 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 		699A6FDD221844F300AB1D30 /* SquishTests */ = {
 			isa = PBXGroup;
 			children = (
+				69F6D08A2262788800B42E9F /* Services */,
 				699A6FDE221844F300AB1D30 /* SquishTests.swift */,
 				699A6FE0221844F300AB1D30 /* Info.plist */,
 			);
@@ -181,6 +186,7 @@
 			children = (
 				699A6FF82218452600AB1D30 /* AudioConcatenator.swift */,
 				69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */,
+				69F6D0882262566F00B42E9F /* ProgressCalculationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -235,6 +241,14 @@
 				6908A26722200BF300599275 /* MetadataViewModel.swift */,
 			);
 			path = MetadataViewController;
+			sourceTree = "<group>";
+		};
+		69F6D08A2262788800B42E9F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				69F6D08B2262789A00B42E9F /* ProgressCalculationServiceTest.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		69FE237E22188ECD00AC64D0 /* Extensions */ = {
@@ -338,13 +352,20 @@
 				TargetAttributes = {
 					699A6FC7221844F000AB1D30 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					699A6FD9221844F300AB1D30 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 699A6FC7221844F000AB1D30;
 					};
 					699A6FE4221844F300AB1D30 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 699A6FC7221844F000AB1D30;
 					};
 				};
@@ -481,6 +502,7 @@
 				699A7001221852B600AB1D30 /* FileListViewController.swift in Sources */,
 				699A6FF92218452600AB1D30 /* AudioConcatenator.swift in Sources */,
 				699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */,
+				69F6D0892262566F00B42E9F /* ProgressCalculationService.swift in Sources */,
 				6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */,
 				699A7005221873B000AB1D30 /* MetadataView.swift in Sources */,
 				69FE23882219C71000AC64D0 /* MainViewController.swift in Sources */,
@@ -491,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F6D08C2262789A00B42E9F /* ProgressCalculationServiceTest.swift in Sources */,
 				699A6FDF221844F300AB1D30 /* SquishTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,7 +673,7 @@
 			baseConfigurationReference = 585A0F8FFEE54473892AAB83 /* Pods-Squish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Squish/Other/Squish.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FV9NULGJG4;
@@ -661,6 +684,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.Squish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -670,7 +694,7 @@
 			baseConfigurationReference = 1A9DC7AE7DE964C599796C93 /* Pods-Squish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Squish/Other/Squish.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FV9NULGJG4;
@@ -681,6 +705,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.Squish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -702,7 +727,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.SquishTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Squish.app/Contents/MacOS/Squish";
 			};
 			name = Debug;
@@ -724,7 +749,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.SquishTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Squish.app/Contents/MacOS/Squish";
 			};
 			name = Release;
@@ -734,6 +759,7 @@
 			baseConfigurationReference = B7E677EDF12FCA530010718E /* Pods-SquishUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FV9NULGJG4;
@@ -745,7 +771,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.SquishUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = Squish;
 			};
 			name = Debug;
@@ -755,6 +782,7 @@
 			baseConfigurationReference = D68EBAF0A38271D8EFBEC1A6 /* Pods-SquishUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FV9NULGJG4;
@@ -766,7 +794,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryanStone.SquishUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = Squish;
 			};
 			name = Release;
