@@ -30,6 +30,7 @@
 		69FE23842219C58D00AC64D0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23832219C58D00AC64D0 /* Array.swift */; };
 		69FE23882219C71000AC64D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23862219C71000AC64D0 /* MainViewController.swift */; };
 		69FE238B221AC99F00AC64D0 /* ImporterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */; };
+		69FE3848226F1A1500DF9C38 /* ReplacePresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */; };
 		7C51FB5A81B113CA0C709B1E /* Pods_Squish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		69FE23832219C58D00AC64D0 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		69FE23862219C71000AC64D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImporterViewController.xib; sourceTree = "<group>"; };
+		69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplacePresentationAnimator.swift; sourceTree = "<group>"; };
 		99CB20B4403C016ED52C7065 /* Pods-SquishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquishUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +196,7 @@
 		699A6FFA2218453D00AB1D30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69FE3846226F19F000DF9C38 /* Transition Animator */,
 				69FE23852219C6FF00AC64D0 /* MainView */,
 				699A70022218736000AB1D30 /* MetadataViewController */,
 				699A6FFF221852A500AB1D30 /* FileList */,
@@ -266,6 +269,14 @@
 				69FE23862219C71000AC64D0 /* MainViewController.swift */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		69FE3846226F19F000DF9C38 /* Transition Animator */ = {
+			isa = PBXGroup;
+			children = (
+				69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */,
+			);
+			path = "Transition Animator";
 			sourceTree = "<group>";
 		};
 		F1E77C4B4C0E1601FE903DEE /* Pods */ = {
@@ -494,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69FE23842219C58D00AC64D0 /* Array.swift in Sources */,
+				69FE3848226F1A1500DF9C38 /* ReplacePresentationAnimator.swift in Sources */,
 				69B9A1CC2225540F008BBDCC /* MetadataWriter.swift in Sources */,
 				69FE238022188EDE00AC64D0 /* NSView.swift in Sources */,
 				69FE23822219C52B00AC64D0 /* DropzoneView.swift in Sources */,

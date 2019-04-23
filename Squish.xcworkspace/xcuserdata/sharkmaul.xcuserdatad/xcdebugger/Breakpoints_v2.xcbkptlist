@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Squish/Views/Importer/ImporterViewController.swift"
-            timestampString = "577620051.324767"
+            timestampString = "577706458.902371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Squish/Views/MainView/MainViewController.swift"
-            timestampString = "577620051.325161"
+            timestampString = "577706458.9027719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "MainViewController"
             landmarkType = "21">
          </BreakpointContent>
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Squish/Views/MetadataViewController/MetadataView.swift"
-            timestampString = "577620051.32555"
+            timestampString = "577705792.0817111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Squish/Views/MetadataViewController/MetadataView.swift"
-            timestampString = "577620051.325883"
+            timestampString = "577705792.0820431"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -208,6 +208,22 @@
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "perform()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Squish/Views/MainView/MainViewController.swift"
+            timestampString = "577706458.9031971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "loadView(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
