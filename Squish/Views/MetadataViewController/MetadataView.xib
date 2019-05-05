@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MetadataView" customModule="Squish" customModuleProvider="target">
             <connections>
-                <outlet property="albumArtImageWell" destination="OLP-AC-vxO" id="1xE-iw-zDU"/>
+                <outlet property="albumArtImageWell" destination="rz8-Fm-GyT" id="rNm-gs-fD5"/>
                 <outlet property="authorTextField" destination="HiJ-Dv-iad" id="GP7-xQ-NAQ"/>
                 <outlet property="exportButton" destination="nJa-AK-poX" id="zhM-MH-EKb"/>
                 <outlet property="narratorTextField" destination="yCQ-GX-gkT" id="sU2-YH-18v"/>
@@ -21,12 +21,12 @@
             <rect key="frame" x="0.0" y="0.0" width="776" height="187"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rz8-Fm-GyT">
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rz8-Fm-GyT" customClass="ImageWell" customModule="Squish" customModuleProvider="target">
                     <rect key="frame" x="-3" y="-3" width="206" height="193"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="ysd-m5-H7t"/>
                     </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="OLP-AC-vxO"/>
+                    <imageCell key="cell" selectable="YES" editable="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="OLP-AC-vxO"/>
                 </imageView>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="efH-8h-WD5">
                     <rect key="frame" x="220" y="145" width="536" height="22"/>

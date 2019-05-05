@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		090CFABAFBDFA3EA7155AA86 /* Pods_SquishTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A90D94F8589E5F2AE90B2 /* Pods_SquishTests.framework */; };
 		26533DB8CE8566FA85EF9AAB /* Pods_SquishUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */; };
+		69085607227F718400154BDE /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69085606227F718400154BDE /* ProgressViewController.swift */; };
+		69085609227F795A00154BDE /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69085608227F795A00154BDE /* ProgressViewController.xib */; };
 		6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908A26722200BF300599275 /* MetadataViewModel.swift */; };
+		690A086B2289C17200A4AEC9 /* mp4art in Resources */ = {isa = PBXBuildFile; fileRef = 690A086A2289C17200A4AEC9 /* mp4art */; };
+		690A086D2289C58F00A4AEC9 /* AlbumArtService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A086C2289C58F00A4AEC9 /* AlbumArtService.swift */; };
 		6914043722390D8A009D2E53 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6914043622390D8A009D2E53 /* ffmpeg */; };
 		699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCB221844F000AB1D30 /* AppDelegate.swift */; };
 		699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCD221844F000AB1D30 /* ViewController.swift */; };
@@ -31,6 +35,7 @@
 		69FE23882219C71000AC64D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23862219C71000AC64D0 /* MainViewController.swift */; };
 		69FE238B221AC99F00AC64D0 /* ImporterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */; };
 		69FE3848226F1A1500DF9C38 /* ReplacePresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */; };
+		69FE384C22730E2600DF9C38 /* arg_tester.rb in Resources */ = {isa = PBXBuildFile; fileRef = 69FE384B22730E2600DF9C38 /* arg_tester.rb */; };
 		7C51FB5A81B113CA0C709B1E /* Pods_Squish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +61,11 @@
 		1A9DC7AE7DE964C599796C93 /* Pods-Squish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.release.xcconfig"; sourceTree = "<group>"; };
 		3D08147D19AC1A0FE0A7E5A7 /* Pods-SquishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.release.xcconfig"; sourceTree = "<group>"; };
 		585A0F8FFEE54473892AAB83 /* Pods-Squish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.debug.xcconfig"; sourceTree = "<group>"; };
+		69085606227F718400154BDE /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		69085608227F795A00154BDE /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 		6908A26722200BF300599275 /* MetadataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataViewModel.swift; sourceTree = "<group>"; };
+		690A086A2289C17200A4AEC9 /* mp4art */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mp4art; sourceTree = "<group>"; };
+		690A086C2289C58F00A4AEC9 /* AlbumArtService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtService.swift; sourceTree = "<group>"; };
 		6914043622390D8A009D2E53 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
 		699A6FC8221844F000AB1D30 /* Squish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A6FCB221844F000AB1D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +94,7 @@
 		69FE23862219C71000AC64D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImporterViewController.xib; sourceTree = "<group>"; };
 		69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplacePresentationAnimator.swift; sourceTree = "<group>"; };
+		69FE384B22730E2600DF9C38 /* arg_tester.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = arg_tester.rb; sourceTree = "<group>"; };
 		99CB20B4403C016ED52C7065 /* Pods-SquishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquishUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,10 +140,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		69085605227F715300154BDE /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				69085608227F795A00154BDE /* ProgressViewController.xib */,
+				69085606227F718400154BDE /* ProgressViewController.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
 		699A6FBF221844EF00AB1D30 = {
 			isa = PBXGroup;
 			children = (
+				69FE384B22730E2600DF9C38 /* arg_tester.rb */,
 				6914043622390D8A009D2E53 /* ffmpeg */,
+				690A086A2289C17200A4AEC9 /* mp4art */,
 				699A6FCA221844F000AB1D30 /* Squish */,
 				699A6FDD221844F300AB1D30 /* SquishTests */,
 				699A6FE8221844F300AB1D30 /* SquishUITests */,
@@ -189,6 +210,7 @@
 				699A6FF82218452600AB1D30 /* AudioConcatenator.swift */,
 				69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */,
 				69F6D0882262566F00B42E9F /* ProgressCalculationService.swift */,
+				690A086C2289C58F00A4AEC9 /* AlbumArtService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -196,6 +218,7 @@
 		699A6FFA2218453D00AB1D30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69085605227F715300154BDE /* ProgressView */,
 				69FE3846226F19F000DF9C38 /* Transition Animator */,
 				69FE23852219C6FF00AC64D0 /* MainView */,
 				699A70022218736000AB1D30 /* MetadataViewController */,
@@ -411,6 +434,9 @@
 				699A7006221873B000AB1D30 /* MetadataView.xib in Resources */,
 				699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */,
 				699A6FD3221844F300AB1D30 /* Main.storyboard in Resources */,
+				69085609227F795A00154BDE /* ProgressViewController.xib in Resources */,
+				690A086B2289C17200A4AEC9 /* mp4art in Resources */,
+				69FE384C22730E2600DF9C38 /* arg_tester.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69085607227F718400154BDE /* ProgressViewController.swift in Sources */,
 				69FE23842219C58D00AC64D0 /* Array.swift in Sources */,
 				69FE3848226F1A1500DF9C38 /* ReplacePresentationAnimator.swift in Sources */,
 				69B9A1CC2225540F008BBDCC /* MetadataWriter.swift in Sources */,
@@ -512,6 +539,7 @@
 				699A6FFE221845BF00AB1D30 /* ImporterViewController.swift in Sources */,
 				699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */,
 				699A7001221852B600AB1D30 /* FileListViewController.swift in Sources */,
+				690A086D2289C58F00A4AEC9 /* AlbumArtService.swift in Sources */,
 				699A6FF92218452600AB1D30 /* AudioConcatenator.swift in Sources */,
 				699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */,
 				69F6D0892262566F00B42E9F /* ProgressCalculationService.swift in Sources */,

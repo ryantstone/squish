@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-class MP3Joiner {
+class AudioConcatenator {
     
     // MARK: - Constants
     let fileData: FileData
@@ -14,7 +14,7 @@ class MP3Joiner {
     var files: [URL] { return fileData.files }
     var totalTrackLength: Seconds { return fileData.combinedTrackLength }
     var sortedFiles: [URL] { return fileData.sortedFiles }
-    var fullExportPath: String { return self.exportFilename + self.exportFilename }
+    var fullExportPath: String { return self.exportPath + self.exportFilename }
     var exportFileURL: URL? { return URL(string: fullExportPath) }
     var currentProgress: Int { return Int((self.currentCompletedSeconds / self.totalTrackLength) * 100) }
     
@@ -39,24 +39,45 @@ class MP3Joiner {
         
         var task = Process()
         task.launchPath = ffmpegPath
-        
-        task.arguments = [
+
+        // Set up the input list and encoder
+        var args: [String] = [
             "-i",
-            #"concat:\#(fileContents)"#,
+            "concat:\(fileContents)",
             "-c:a",
-            "libfdk_aac",
-            "-vn",
-            #"\#(exportPath)\#(exportFilename)"#
+            "libfdk_aac"
         ]
-        
-        
+
+        // Add metadata (if it exists)
+        addMetadata(for: "title", with: metadata.titleText, into: &args)
+        addMetadata(for: "album", with: metadata.titleText, into: &args)
+        addMetadata(for: "artist", with: metadata.authorText, into: &args)
+        addMetadata(for: "album_artist", with: metadata.narratorText, into: &args)
+
+        // Add the output path
+        args.append(contentsOf: [
+            "-vn",
+            "\(exportPath)\(exportFilename)"
+        ])
+
+        task.arguments = args
+
         var pipe = Pipe()
         setStdErrPipe(pipe: &pipe, task: &task)
         setTerminationNotification(task: task)
 
         task.launch()
     }
-    
+
+    // Adds metadata for the given key/value pair when passed a non-empty string
+    private func addMetadata(for key: String, with value: String, into args: inout [String]) {
+        guard !value.isEmpty else { return }
+        args.append(contentsOf: [
+            "-metadata",
+            "\(key)=\(value)"
+        ])
+    }
+
     func concatString() -> String {
         return files
             .map { $0.path}
@@ -94,8 +115,13 @@ class MP3Joiner {
         var obs2 : NSObjectProtocol!
         obs2 = NotificationCenter.default.addObserver(forName: Process.didTerminateNotification,
                                                       object: task,
-                                                      queue: nil) { notification -> Void in
-                                                        self.delegate?.didFinish(joinedFileURL: fileURL)
+                                                      queue: nil) { [weak self] notification -> Void in
+                                                        guard let strongSelf = self else { return }
+                                                        if let exportUrl = strongSelf.exportFileURL {
+                                                            AlbumArtService.call(strongSelf.metadata, fileUrl: exportUrl)
+                                                        }
+
+                                                        strongSelf.delegate?.didFinish(joinedFileURL: fileURL)
                                                         NotificationCenter.default.removeObserver(obs2!)
         }
     }
@@ -111,7 +137,6 @@ class MP3Joiner {
             print(error)
         }
     }
-    
 }
 
 protocol Mp3JoinerDelegate {

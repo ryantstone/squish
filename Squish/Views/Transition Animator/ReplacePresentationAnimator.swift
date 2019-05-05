@@ -1,4 +1,4 @@
-import Foundation
+import Cocoa
 
 class ReplacePresentationAnimator: NSObject, NSViewControllerPresentationAnimator {
     func animatePresentation(of viewController: NSViewController, from fromViewController: NSViewController) {
