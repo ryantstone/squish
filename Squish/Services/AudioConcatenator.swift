@@ -40,21 +40,42 @@ class MP3Joiner {
         var task = Process()
         task.launchPath = ffmpegPath
         
-        task.arguments = [
+        let args: [String] = [
             "-i",
-            #"concat:\#(fileContents)"#,
+            #"concat:"\#(fileContents)""#,
+            title(),
+            artist(),
+            narrator(),
             "-c:a",
             "libfdk_aac",
             "-vn",
             #"\#(exportPath)\#(exportFilename)"#
-        ]
+        ].compactMap { $0 }
         
-        
+        task.arguments = args
+
         var pipe = Pipe()
         setStdErrPipe(pipe: &pipe, task: &task)
         setTerminationNotification(task: task)
 
         task.launch()
+    }
+
+    func title() -> String? {
+        guard metadata.titleText != "" else {
+            return nil
+        }
+        return #"-metadata title="\#(metadata.titleText)""#
+    }
+    
+    func artist() -> String? {
+        guard metadata.authorText != "" else { return nil }
+        return #"-metadata artist="\#(metadata.authorText)""#
+    }
+    
+    func narrator() -> String? {
+        guard metadata.narratorText != "" else { return nil }
+        return #"-metadata album_artist="\#(metadata.narratorText)""#
     }
     
     func concatString() -> String {

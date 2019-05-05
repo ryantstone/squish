@@ -17,6 +17,7 @@ class ProgressCalculationService {
     }
     
     private func perform() -> Result<Seconds, Error> {
+        print(progressText)
         let componentValues = extractValues()
         
         guard let hourString   = componentValues["hours"],

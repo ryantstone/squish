@@ -31,6 +31,7 @@
 		69FE23882219C71000AC64D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23862219C71000AC64D0 /* MainViewController.swift */; };
 		69FE238B221AC99F00AC64D0 /* ImporterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */; };
 		69FE3848226F1A1500DF9C38 /* ReplacePresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */; };
+		69FE384C22730E2600DF9C38 /* arg_tester.rb in Resources */ = {isa = PBXBuildFile; fileRef = 69FE384B22730E2600DF9C38 /* arg_tester.rb */; };
 		7C51FB5A81B113CA0C709B1E /* Pods_Squish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		69FE23862219C71000AC64D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImporterViewController.xib; sourceTree = "<group>"; };
 		69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplacePresentationAnimator.swift; sourceTree = "<group>"; };
+		69FE384B22730E2600DF9C38 /* arg_tester.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = arg_tester.rb; sourceTree = "<group>"; };
 		99CB20B4403C016ED52C7065 /* Pods-SquishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquishUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A645BEA68741DC5BC2CA49E2 /* Pods_Squish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 		699A6FBF221844EF00AB1D30 = {
 			isa = PBXGroup;
 			children = (
+				69FE384B22730E2600DF9C38 /* arg_tester.rb */,
 				6914043622390D8A009D2E53 /* ffmpeg */,
 				699A6FCA221844F000AB1D30 /* Squish */,
 				699A6FDD221844F300AB1D30 /* SquishTests */,
@@ -411,6 +414,7 @@
 				699A7006221873B000AB1D30 /* MetadataView.xib in Resources */,
 				699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */,
 				699A6FD3221844F300AB1D30 /* Main.storyboard in Resources */,
+				69FE384C22730E2600DF9C38 /* arg_tester.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
