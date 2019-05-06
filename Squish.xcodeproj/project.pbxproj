@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		090CFABAFBDFA3EA7155AA86 /* Pods_SquishTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A90D94F8589E5F2AE90B2 /* Pods_SquishTests.framework */; };
 		26533DB8CE8566FA85EF9AAB /* Pods_SquishUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */; };
+		69085607227F718400154BDE /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69085606227F718400154BDE /* ProgressViewController.swift */; };
+		69085609227F795A00154BDE /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69085608227F795A00154BDE /* ProgressViewController.xib */; };
 		6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908A26722200BF300599275 /* MetadataViewModel.swift */; };
 		6914043722390D8A009D2E53 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6914043622390D8A009D2E53 /* ffmpeg */; };
 		699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCB221844F000AB1D30 /* AppDelegate.swift */; };
@@ -57,6 +59,8 @@
 		1A9DC7AE7DE964C599796C93 /* Pods-Squish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.release.xcconfig"; sourceTree = "<group>"; };
 		3D08147D19AC1A0FE0A7E5A7 /* Pods-SquishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquishTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquishTests/Pods-SquishTests.release.xcconfig"; sourceTree = "<group>"; };
 		585A0F8FFEE54473892AAB83 /* Pods-Squish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.debug.xcconfig"; sourceTree = "<group>"; };
+		69085606227F718400154BDE /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		69085608227F795A00154BDE /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 		6908A26722200BF300599275 /* MetadataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataViewModel.swift; sourceTree = "<group>"; };
 		6914043622390D8A009D2E53 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
 		699A6FC8221844F000AB1D30 /* Squish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squish.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +136,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		69085605227F715300154BDE /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				69085608227F795A00154BDE /* ProgressViewController.xib */,
+				69085606227F718400154BDE /* ProgressViewController.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
 		699A6FBF221844EF00AB1D30 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +212,7 @@
 		699A6FFA2218453D00AB1D30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69085605227F715300154BDE /* ProgressView */,
 				69FE3846226F19F000DF9C38 /* Transition Animator */,
 				69FE23852219C6FF00AC64D0 /* MainView */,
 				699A70022218736000AB1D30 /* MetadataViewController */,
@@ -414,6 +428,7 @@
 				699A7006221873B000AB1D30 /* MetadataView.xib in Resources */,
 				699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */,
 				699A6FD3221844F300AB1D30 /* Main.storyboard in Resources */,
+				69085609227F795A00154BDE /* ProgressViewController.xib in Resources */,
 				69FE384C22730E2600DF9C38 /* arg_tester.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69085607227F718400154BDE /* ProgressViewController.swift in Sources */,
 				69FE23842219C58D00AC64D0 /* Array.swift in Sources */,
 				69FE3848226F1A1500DF9C38 /* ReplacePresentationAnimator.swift in Sources */,
 				69B9A1CC2225540F008BBDCC /* MetadataWriter.swift in Sources */,

@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-class MP3Joiner {
+class AudioConcatenator {
     
     // MARK: - Constants
     let fileData: FileData
@@ -39,19 +39,27 @@ class MP3Joiner {
         
         var task = Process()
         task.launchPath = ffmpegPath
-        
-        let args: [String] = [
+
+        // Set up the input list and encoder
+        var args: [String] = [
             "-i",
-            #"concat:"\#(fileContents)""#,
-            title(),
-            artist(),
-            narrator(),
+            "concat:\(fileContents)",
             "-c:a",
-            "libfdk_aac",
+            "libfdk_aac"
+        ]
+
+        // Add metadata (if it exists)
+        addMetadata(for: "title", with: metadata.titleText, into: &args)
+        addMetadata(for: "album", with: metadata.titleText, into: &args)
+        addMetadata(for: "artist", with: metadata.authorText, into: &args)
+        addMetadata(for: "album_artist", with: metadata.narratorText, into: &args)
+
+        // Add the output path
+        args.append(contentsOf: [
             "-vn",
-            #"\#(exportPath)\#(exportFilename)"#
-        ].compactMap { $0 }
-        
+            "\(exportPath)\(exportFilename)"
+        ])
+
         task.arguments = args
 
         var pipe = Pipe()
@@ -61,23 +69,15 @@ class MP3Joiner {
         task.launch()
     }
 
-    func title() -> String? {
-        guard metadata.titleText != "" else {
-            return nil
-        }
-        return #"-metadata title="\#(metadata.titleText)""#
+    // Adds metadata for the given key/value pair when passed a non-empty string
+    private func addMetadata(for key: String, with value: String, into args: inout [String]) {
+        guard !value.isEmpty else { return }
+        args.append(contentsOf: [
+            "-metadata",
+            "\(key)=\(value)"
+        ])
     }
-    
-    func artist() -> String? {
-        guard metadata.authorText != "" else { return nil }
-        return #"-metadata artist="\#(metadata.authorText)""#
-    }
-    
-    func narrator() -> String? {
-        guard metadata.narratorText != "" else { return nil }
-        return #"-metadata album_artist="\#(metadata.narratorText)""#
-    }
-    
+
     func concatString() -> String {
         return files
             .map { $0.path}
