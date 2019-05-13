@@ -14,7 +14,7 @@ class AudioConcatenator {
     var files: [URL] { return fileData.files }
     var totalTrackLength: Seconds { return fileData.combinedTrackLength }
     var sortedFiles: [URL] { return fileData.sortedFiles }
-    var fullExportPath: String { return self.exportFilename + self.exportFilename }
+    var fullExportPath: String { return self.exportPath + self.exportFilename }
     var exportFileURL: URL? { return URL(string: fullExportPath) }
     var currentProgress: Int { return Int((self.currentCompletedSeconds / self.totalTrackLength) * 100) }
     
@@ -115,8 +115,13 @@ class AudioConcatenator {
         var obs2 : NSObjectProtocol!
         obs2 = NotificationCenter.default.addObserver(forName: Process.didTerminateNotification,
                                                       object: task,
-                                                      queue: nil) { notification -> Void in
-                                                        self.delegate?.didFinish(joinedFileURL: fileURL)
+                                                      queue: nil) { [weak self] notification -> Void in
+                                                        guard let strongSelf = self else { return }
+                                                        if let exportUrl = strongSelf.exportFileURL {
+                                                            AlbumArtService.call(strongSelf.metadata, fileUrl: exportUrl)
+                                                        }
+
+                                                        strongSelf.delegate?.didFinish(joinedFileURL: fileURL)
                                                         NotificationCenter.default.removeObserver(obs2!)
         }
     }
@@ -132,7 +137,6 @@ class AudioConcatenator {
             print(error)
         }
     }
-    
 }
 
 protocol Mp3JoinerDelegate {
