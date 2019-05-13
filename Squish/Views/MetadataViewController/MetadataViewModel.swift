@@ -5,10 +5,14 @@ typealias Seconds = Double
 
 // FIXME: SHOULD THIS BE RENAMED?
 struct MetadataViewModel {
-    var albumArt: NSImage?
+    var albumArt: URL?
     var titleText    = ""
     var authorText   = ""
     var narratorText = ""
+
+    public mutating func addAlbumArt(_ url: URL) {
+        self.albumArt = url
+    }
 }
 
 struct FileData {
