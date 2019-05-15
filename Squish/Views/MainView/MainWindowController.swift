@@ -1,6 +1,6 @@
 import Cocoa
 
-class MainViewController: NSWindowController {
+class MainWindowController: NSWindowController {
     lazy var importerViewController = ImporterViewController.init(nibName: "ImporterViewController", bundle: nil)
     lazy var metadataViewController = MetadataView(nibName: "MetadataView", bundle: nil)
     lazy var progressViewController = ProgressViewController(nibName: "ProgressViewController", bundle: nil)
@@ -17,21 +17,31 @@ class MainViewController: NSWindowController {
         loadView(importerViewController)
         importerViewController.delegate = self
         metadataViewController.delegate = self
+//        window?.toggleTabBar(nil)
     }
     
     func loadView(_ viewController: NSViewController) {
         window?.contentViewController?.present(viewController, animator: ReplacePresentationAnimator())
     }
+
+    override func newWindowForTab(_ sender: Any?) {
+        guard let newWindowController = self.storyboard?.instantiateInitialController() as? MainWindowController,
+              let newWindow = newWindowController.window else { return }
+
+        self.window?.addTabbedWindow(newWindow, ordered: .above)
+    }
 }
 
-extension MainViewController: ImporterViewControllerDelegate {
+// MARK: - Importer View Controller Delegate
+extension MainWindowController: ImporterViewControllerDelegate {
     func didReceiveFiles(_ files: [URL]) {
         self.files = files
         loadView(metadataViewController)
     }
 }
 
-extension MainViewController: MetadataViewDelegate {
+// MARK: - Metadata View Delegate
+extension MainWindowController: MetadataViewDelegate {
     func didTapExport(metadata: MetadataViewModel) {
         loadView(progressViewController)
         fileData            = FileData(files: files, metaData: metadata)
@@ -41,7 +51,8 @@ extension MainViewController: MetadataViewDelegate {
     }
 }
 
-extension MainViewController: Mp3JoinerDelegate {
+// MARK: - AudioConcatenator Delegate
+extension MainWindowController: Mp3JoinerDelegate {
     func didProgress(_ progress: Int) {
         progressViewController.updateProgress(progress)
     }

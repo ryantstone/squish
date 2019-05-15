@@ -32,7 +32,7 @@
 		69FE238022188EDE00AC64D0 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE237F22188EDE00AC64D0 /* NSView.swift */; };
 		69FE23822219C52B00AC64D0 /* DropzoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23812219C52B00AC64D0 /* DropzoneView.swift */; };
 		69FE23842219C58D00AC64D0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23832219C58D00AC64D0 /* Array.swift */; };
-		69FE23882219C71000AC64D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23862219C71000AC64D0 /* MainViewController.swift */; };
+		69FE23882219C71000AC64D0 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE23862219C71000AC64D0 /* MainWindowController.swift */; };
 		69FE238B221AC99F00AC64D0 /* ImporterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */; };
 		69FE3848226F1A1500DF9C38 /* ReplacePresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */; };
 		69FE384C22730E2600DF9C38 /* arg_tester.rb in Resources */ = {isa = PBXBuildFile; fileRef = 69FE384B22730E2600DF9C38 /* arg_tester.rb */; };
@@ -91,7 +91,7 @@
 		69FE237F22188EDE00AC64D0 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
 		69FE23812219C52B00AC64D0 /* DropzoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropzoneView.swift; sourceTree = "<group>"; };
 		69FE23832219C58D00AC64D0 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		69FE23862219C71000AC64D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		69FE23862219C71000AC64D0 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		69FE238A221AC99F00AC64D0 /* ImporterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImporterViewController.xib; sourceTree = "<group>"; };
 		69FE3847226F1A1500DF9C38 /* ReplacePresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplacePresentationAnimator.swift; sourceTree = "<group>"; };
 		69FE384B22730E2600DF9C38 /* arg_tester.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = arg_tester.rb; sourceTree = "<group>"; };
@@ -289,7 +289,7 @@
 		69FE23852219C6FF00AC64D0 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				69FE23862219C71000AC64D0 /* MainViewController.swift */,
+				69FE23862219C71000AC64D0 /* MainWindowController.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -545,7 +545,7 @@
 				69F6D0892262566F00B42E9F /* ProgressCalculationService.swift in Sources */,
 				6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */,
 				699A7005221873B000AB1D30 /* MetadataView.swift in Sources */,
-				69FE23882219C71000AC64D0 /* MainViewController.swift in Sources */,
+				69FE23882219C71000AC64D0 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
