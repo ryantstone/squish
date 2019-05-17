@@ -3,7 +3,7 @@ import AVFoundation
 
 class MetadataWriter {
     
-    let metadata: MetadataViewModel
+    let metadata: Metadata
     var title: AVMutableMetadataItem {
         let songName        = AVMutableMetadataItem()
         songName.value      = metadata.titleText as NSString
@@ -14,7 +14,7 @@ class MetadataWriter {
         return [title]
     }
     
-    init(metadata: MetadataViewModel) {
+    init(metadata: Metadata) {
         self.metadata = metadata
     }
     

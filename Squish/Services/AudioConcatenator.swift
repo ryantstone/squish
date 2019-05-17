@@ -139,7 +139,7 @@ class AudioConcatenator {
     }
 }
 
-protocol Mp3JoinerDelegate {
+protocol AudioConcatenatorDelegate {
     func didProgress(_ progress: Int)
     func didFinish(joinedFileURL: URL)
 }

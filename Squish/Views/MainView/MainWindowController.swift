@@ -2,7 +2,7 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
     lazy var importerViewController = ImporterViewController.init(nibName: "ImporterViewController", bundle: nil)
-    lazy var metadataViewController = MetadataView(nibName: "MetadataView", bundle: nil)
+    lazy var metadataViewController = MetadataViewController(nibName: "MetadataView", bundle: nil)
     lazy var progressViewController = ProgressViewController(nibName: "ProgressViewController", bundle: nil)
     var files = [URL]()
     var fileData: FileData!
@@ -17,7 +17,6 @@ class MainWindowController: NSWindowController {
         loadView(importerViewController)
         importerViewController.delegate = self
         metadataViewController.delegate = self
-//        window?.toggleTabBar(nil)
     }
     
     func loadView(_ viewController: NSViewController) {
@@ -42,7 +41,7 @@ extension MainWindowController: ImporterViewControllerDelegate {
 
 // MARK: - Metadata View Delegate
 extension MainWindowController: MetadataViewDelegate {
-    func didTapExport(metadata: MetadataViewModel) {
+    func didTapExport(metadata: Metadata) {
         loadView(progressViewController)
         fileData            = FileData(files: files, metaData: metadata)
         mp3Joiner           = AudioConcatenator(fileData)
@@ -52,7 +51,7 @@ extension MainWindowController: MetadataViewDelegate {
 }
 
 // MARK: - AudioConcatenator Delegate
-extension MainWindowController: Mp3JoinerDelegate {
+extension MainWindowController: AudioConcatenatorDelegate {
     func didProgress(_ progress: Int) {
         progressViewController.updateProgress(progress)
     }
