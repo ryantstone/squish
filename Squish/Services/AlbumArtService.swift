@@ -3,7 +3,7 @@ import Foundation
 class AlbumArtService {
 
     let mp4ArtBinary = Bundle.main.path(forResource: "mp4art", ofType: nil)
-    let metadata: MetadataViewModel
+    let metadata: Metadata
     let fileUrl: URL
     var artworkPath: String!
     
@@ -14,11 +14,11 @@ class AlbumArtService {
         artworkPath
     ]
 
-    public static func call(_ metadata: MetadataViewModel, fileUrl: URL) {
+    public static func call(_ metadata: Metadata, fileUrl: URL) {
         AlbumArtService(metadata, fileUrl).perform()
     }
 
-    private init(_ metadata: MetadataViewModel, _ fileUrl: URL) {
+    private init(_ metadata: Metadata, _ fileUrl: URL) {
         self.metadata = metadata
         self.fileUrl = fileUrl
     }
