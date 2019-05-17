@@ -5,9 +5,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="MetadataView" customModule="Squish" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="MetadataViewController" customModule="Squish" customModuleProvider="target">
             <connections>
-                <outlet property="albumArtImageWell" destination="rz8-Fm-GyT" id="rNm-gs-fD5"/>
+                <outlet property="albumArtImageWell" destination="rz8-Fm-GyT" id="Wwb-7d-IXN"/>
                 <outlet property="authorTextField" destination="HiJ-Dv-iad" id="GP7-xQ-NAQ"/>
                 <outlet property="exportButton" destination="nJa-AK-poX" id="zhM-MH-EKb"/>
                 <outlet property="narratorTextField" destination="yCQ-GX-gkT" id="sU2-YH-18v"/>
