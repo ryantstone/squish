@@ -22,6 +22,7 @@ class AudioConcatenator {
     
     // MARK: - Variables
     var currentCompletedSeconds: Seconds = 0
+    var fileContents: String { return sortedFiles.map { $0.path }.joined(separator: "|") }
     let exportFilename  = UUID().uuidString + ".m4a"
 
     // MARK: - Init
