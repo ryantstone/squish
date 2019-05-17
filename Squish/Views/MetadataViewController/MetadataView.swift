@@ -1,6 +1,6 @@
 import Cocoa
 
-class MetadataView: NSViewController {
+class MetadataViewController: NSViewController {
     // MARK: - Outlets
     @IBOutlet weak var albumArtImageWell: ImageWell!
     @IBOutlet weak var titleTextfield: NSTextField!
@@ -11,7 +11,7 @@ class MetadataView: NSViewController {
     // MARK: - Actions
 
     var delegate: MetadataViewDelegate?
-    var viewModel  = MetadataViewModel()
+    var metaData  = Metadata()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,57 +24,45 @@ class MetadataView: NSViewController {
     }
     
     @objc func didTapExportButton() {
-        delegate?.didTapExport(metadata: viewModel)
+        displaySavePanel()
     }
-   
+
+    func displaySavePanel() {
+        let savePanel               = NSSavePanel()
+        savePanel.allowedFileTypes  = ["m4a", "m4b"]
+
+        savePanel.begin { [unowned self] (response) in
+            if response.rawValue == NSApplication.ModalResponse.OK.rawValue {
+                guard let url = savePanel.url else { return }
+                self.metaData.setSaveLocation(url)
+                self.delegate?.didTapExport(metadata: self.metaData)
+            }
+        }
+    }
 }
 
-extension MetadataView: NSTextFieldDelegate {
+extension MetadataViewController: NSTextFieldDelegate {
     func controlTextDidChange(_ obj: Notification) {
         guard let textField = obj.object as? NSTextField else { return }
         switch textField {
         case titleTextfield:
-            viewModel.titleText    = textField.stringValue
+            metaData.titleText    = textField.stringValue
         case authorTextField:
-            viewModel.authorText   = textField.stringValue
+            metaData.authorText   = textField.stringValue
         case narratorTextField:
-            viewModel.narratorText = textField.stringValue
+            metaData.narratorText = textField.stringValue
         default:
             fatalError()
         }
     }
 }
 
-extension MetadataView: ImageWellDelegate {
+extension MetadataViewController: ImageWellDelegate {
     func didDropImage(_ url: URL) {
-        viewModel.addAlbumArt(url)
+        metaData.addAlbumArt(url)
     }
 }
 
 protocol MetadataViewDelegate {
-    func didTapExport(metadata: MetadataViewModel)
-}
-
-class ImageWell: NSImageView {
-
-    var delegate: ImageWellDelegate?
-
-    override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
-        let dragSucceeded = super.performDragOperation(sender)
-        if dragSucceeded == true {
-            guard let filenameURL = NSURL(from: sender.draggingPasteboard) as URL? else {
-                return false
-            }
-
-            delegate?.didDropImage(filenameURL)
-
-            return true
-        }
-        return false
-
-    }
-}
-
-protocol ImageWellDelegate {
-    func didDropImage(_ url: URL)
+    func didTapExport(metadata: Metadata)
 }

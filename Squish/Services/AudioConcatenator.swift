@@ -7,21 +7,21 @@ class AudioConcatenator {
     let fileData: FileData
     
     // MARK: - Delegate
-    var delegate: Mp3JoinerDelegate?
+    var delegate: AudioConcatenatorDelegate?
     
     // MARK: - Computed Properties
-    var metadata: MetadataViewModel { return fileData.metaData }
+    var metadata: Metadata { return fileData.metaData }
     var files: [URL] { return fileData.files }
     var totalTrackLength: Seconds { return fileData.combinedTrackLength }
     var sortedFiles: [URL] { return fileData.sortedFiles }
-    var fullExportPath: String { return self.exportPath + self.exportFilename }
-    var exportFileURL: URL? { return URL(string: fullExportPath) }
+    var temporaryExport: URL { return URL(fileURLWithPath: NSTemporaryDirectory() + self.exportFilename) }
+    var temporaryExportPath: String { return temporaryExport.path }
+
+    var exportFileURL: URL? { return metadata.saveLocation }
     var currentProgress: Int { return Int((self.currentCompletedSeconds / self.totalTrackLength) * 100) }
     
     // MARK: - Variables
     var currentCompletedSeconds: Seconds = 0
-    var fileContents: String { return files.map { $0.path }.joined(separator: "|") }
-    let exportPath      = FileManager.default.homeDirectoryForCurrentUser.path + "/Desktop/"
     let exportFilename  = UUID().uuidString + ".m4a"
 
     // MARK: - Init
@@ -57,7 +57,7 @@ class AudioConcatenator {
         // Add the output path
         args.append(contentsOf: [
             "-vn",
-            "\(exportPath)\(exportFilename)"
+            temporaryExport.path
         ])
 
         task.arguments = args
@@ -119,6 +119,9 @@ class AudioConcatenator {
                                                         guard let strongSelf = self else { return }
                                                         if let exportUrl = strongSelf.exportFileURL {
                                                             AlbumArtService.call(strongSelf.metadata, fileUrl: exportUrl)
+
+                                                            guard let saveLocation = strongSelf.metadata.saveLocation else { return }
+                                                            MoveService.call(temporary: strongSelf.temporaryExport, destination: saveLocation)
                                                         }
 
                                                         strongSelf.delegate?.didFinish(joinedFileURL: fileURL)
