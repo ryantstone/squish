@@ -11,13 +11,14 @@
 		26533DB8CE8566FA85EF9AAB /* Pods_SquishUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E2D009169886A2440FD900 /* Pods_SquishUITests.framework */; };
 		69085607227F718400154BDE /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69085606227F718400154BDE /* ProgressViewController.swift */; };
 		69085609227F795A00154BDE /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69085608227F795A00154BDE /* ProgressViewController.xib */; };
-		6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908A26722200BF300599275 /* MetadataViewModel.swift */; };
+		6908A26822200BF300599275 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908A26722200BF300599275 /* Metadata.swift */; };
 		690A086B2289C17200A4AEC9 /* mp4art in Resources */ = {isa = PBXBuildFile; fileRef = 690A086A2289C17200A4AEC9 /* mp4art */; };
 		690A086D2289C58F00A4AEC9 /* AlbumArtService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690A086C2289C58F00A4AEC9 /* AlbumArtService.swift */; };
 		6914043722390D8A009D2E53 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6914043622390D8A009D2E53 /* ffmpeg */; };
 		693A33C3228CB8A700FDE4DA /* ImageWell + Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693A33C2228CB8A700FDE4DA /* ImageWell + Delegate.swift */; };
 		693A33C6228D67ED00FDE4DA /* FileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693A33C5228D67ED00FDE4DA /* FileData.swift */; };
 		693A33C8228D8F6700FDE4DA /* MoveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693A33C7228D8F6700FDE4DA /* MoveService.swift */; };
+		693C9C51228F22D7001769F6 /* FileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693C9C50228F22D7001769F6 /* FileTableView.swift */; };
 		699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCB221844F000AB1D30 /* AppDelegate.swift */; };
 		699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FCD221844F000AB1D30 /* ViewController.swift */; };
 		699A6FD0221844F300AB1D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699A6FCF221844F300AB1D30 /* Assets.xcassets */; };
@@ -27,9 +28,8 @@
 		699A6FF92218452600AB1D30 /* AudioConcatenator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FF82218452600AB1D30 /* AudioConcatenator.swift */; };
 		699A6FFE221845BF00AB1D30 /* ImporterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A6FFD221845BF00AB1D30 /* ImporterViewController.swift */; };
 		699A7001221852B600AB1D30 /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A7000221852B600AB1D30 /* FileListViewController.swift */; };
-		699A7005221873B000AB1D30 /* MetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A7003221873B000AB1D30 /* MetadataView.swift */; };
+		699A7005221873B000AB1D30 /* MetadataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A7003221873B000AB1D30 /* MetadataViewController.swift */; };
 		699A7006221873B000AB1D30 /* MetadataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699A7004221873B000AB1D30 /* MetadataView.xib */; };
-		69B9A1CC2225540F008BBDCC /* MetadataWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */; };
 		69F6D0892262566F00B42E9F /* ProgressCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6D0882262566F00B42E9F /* ProgressCalculationService.swift */; };
 		69F6D08C2262789A00B42E9F /* ProgressCalculationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6D08B2262789A00B42E9F /* ProgressCalculationServiceTest.swift */; };
 		69FE238022188EDE00AC64D0 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE237F22188EDE00AC64D0 /* NSView.swift */; };
@@ -66,13 +66,14 @@
 		585A0F8FFEE54473892AAB83 /* Pods-Squish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squish/Pods-Squish.debug.xcconfig"; sourceTree = "<group>"; };
 		69085606227F718400154BDE /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		69085608227F795A00154BDE /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
-		6908A26722200BF300599275 /* MetadataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MetadataViewModel.swift; path = ../Views/MetadataViewController/MetadataViewModel.swift; sourceTree = "<group>"; };
+		6908A26722200BF300599275 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Metadata.swift; path = ../Views/MetadataViewController/Metadata.swift; sourceTree = "<group>"; };
 		690A086A2289C17200A4AEC9 /* mp4art */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mp4art; sourceTree = "<group>"; };
 		690A086C2289C58F00A4AEC9 /* AlbumArtService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtService.swift; sourceTree = "<group>"; };
 		6914043622390D8A009D2E53 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
 		693A33C2228CB8A700FDE4DA /* ImageWell + Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageWell + Delegate.swift"; sourceTree = "<group>"; };
 		693A33C5228D67ED00FDE4DA /* FileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileData.swift; sourceTree = "<group>"; };
 		693A33C7228D8F6700FDE4DA /* MoveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveService.swift; sourceTree = "<group>"; };
+		693C9C50228F22D7001769F6 /* FileTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTableView.swift; sourceTree = "<group>"; };
 		699A6FC8221844F000AB1D30 /* Squish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A6FCB221844F000AB1D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699A6FCD221844F000AB1D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,9 +90,8 @@
 		699A6FF82218452600AB1D30 /* AudioConcatenator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioConcatenator.swift; sourceTree = "<group>"; };
 		699A6FFD221845BF00AB1D30 /* ImporterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImporterViewController.swift; sourceTree = "<group>"; };
 		699A7000221852B600AB1D30 /* FileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
-		699A7003221873B000AB1D30 /* MetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataView.swift; sourceTree = "<group>"; };
+		699A7003221873B000AB1D30 /* MetadataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataViewController.swift; sourceTree = "<group>"; };
 		699A7004221873B000AB1D30 /* MetadataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetadataView.xib; sourceTree = "<group>"; };
-		69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataWriter.swift; sourceTree = "<group>"; };
 		69F6D0882262566F00B42E9F /* ProgressCalculationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCalculationService.swift; sourceTree = "<group>"; };
 		69F6D08B2262789A00B42E9F /* ProgressCalculationServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCalculationServiceTest.swift; sourceTree = "<group>"; };
 		69FE237F22188EDE00AC64D0 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
@@ -158,10 +158,19 @@
 		693A33C4228D67AC00FDE4DA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6908A26722200BF300599275 /* MetadataViewModel.swift */,
+				6908A26722200BF300599275 /* Metadata.swift */,
 				693A33C5228D67ED00FDE4DA /* FileData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		693C9C4F228F22C9001769F6 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				693A33C2228CB8A700FDE4DA /* ImageWell + Delegate.swift */,
+				693C9C50228F22D7001769F6 /* FileTableView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		699A6FBF221844EF00AB1D30 = {
@@ -224,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				699A6FF82218452600AB1D30 /* AudioConcatenator.swift */,
-				69B9A1CB2225540F008BBDCC /* MetadataWriter.swift */,
 				69F6D0882262566F00B42E9F /* ProgressCalculationService.swift */,
 				690A086C2289C58F00A4AEC9 /* AlbumArtService.swift */,
 				693A33C7228D8F6700FDE4DA /* MoveService.swift */,
@@ -279,9 +287,9 @@
 		699A70022218736000AB1D30 /* MetadataViewController */ = {
 			isa = PBXGroup;
 			children = (
-				699A7003221873B000AB1D30 /* MetadataView.swift */,
+				693C9C4F228F22C9001769F6 /* Subviews */,
+				699A7003221873B000AB1D30 /* MetadataViewController.swift */,
 				699A7004221873B000AB1D30 /* MetadataView.xib */,
-				693A33C2228CB8A700FDE4DA /* ImageWell + Delegate.swift */,
 			);
 			path = MetadataViewController;
 			sourceTree = "<group>";
@@ -551,20 +559,20 @@
 				69FE23842219C58D00AC64D0 /* Array.swift in Sources */,
 				69FE3848226F1A1500DF9C38 /* ReplacePresentationAnimator.swift in Sources */,
 				693A33C3228CB8A700FDE4DA /* ImageWell + Delegate.swift in Sources */,
-				69B9A1CC2225540F008BBDCC /* MetadataWriter.swift in Sources */,
 				69FE238022188EDE00AC64D0 /* NSView.swift in Sources */,
 				69FE23822219C52B00AC64D0 /* DropzoneView.swift in Sources */,
 				699A6FFE221845BF00AB1D30 /* ImporterViewController.swift in Sources */,
 				699A6FCE221844F000AB1D30 /* ViewController.swift in Sources */,
 				699A7001221852B600AB1D30 /* FileListViewController.swift in Sources */,
+				693C9C51228F22D7001769F6 /* FileTableView.swift in Sources */,
 				690A086D2289C58F00A4AEC9 /* AlbumArtService.swift in Sources */,
 				693A33C6228D67ED00FDE4DA /* FileData.swift in Sources */,
 				693A33C8228D8F6700FDE4DA /* MoveService.swift in Sources */,
 				699A6FF92218452600AB1D30 /* AudioConcatenator.swift in Sources */,
 				699A6FCC221844F000AB1D30 /* AppDelegate.swift in Sources */,
 				69F6D0892262566F00B42E9F /* ProgressCalculationService.swift in Sources */,
-				6908A26822200BF300599275 /* MetadataViewModel.swift in Sources */,
-				699A7005221873B000AB1D30 /* MetadataView.swift in Sources */,
+				6908A26822200BF300599275 /* Metadata.swift in Sources */,
+				699A7005221873B000AB1D30 /* MetadataViewController.swift in Sources */,
 				69FE23882219C71000AC64D0 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

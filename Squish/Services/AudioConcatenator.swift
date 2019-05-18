@@ -13,7 +13,6 @@ class AudioConcatenator {
     var metadata: Metadata { return fileData.metaData }
     var files: [URL] { return fileData.files }
     var totalTrackLength: Seconds { return fileData.combinedTrackLength }
-    var sortedFiles: [URL] { return fileData.sortedFiles }
     var temporaryExport: URL { return URL(fileURLWithPath: NSTemporaryDirectory() + self.exportFilename) }
     var temporaryExportPath: String { return temporaryExport.path }
 
@@ -22,7 +21,7 @@ class AudioConcatenator {
     
     // MARK: - Variables
     var currentCompletedSeconds: Seconds = 0
-    var fileContents: String { return sortedFiles.map { $0.path }.joined(separator: "|") }
+    var fileContents: String { return files.map { $0.path }.joined(separator: "|") }
     let exportFilename  = UUID().uuidString + ".m4a"
 
     // MARK: - Init
@@ -71,8 +70,8 @@ class AudioConcatenator {
     }
 
     // Adds metadata for the given key/value pair when passed a non-empty string
-    private func addMetadata(for key: String, with value: String, into args: inout [String]) {
-        guard !value.isEmpty else { return }
+    private func addMetadata(for key: String, with value: String?, into args: inout [String]) {
+        guard let value = value else { return }
         args.append(contentsOf: [
             "-metadata",
             "\(key)=\(value)"

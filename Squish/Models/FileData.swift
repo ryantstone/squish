@@ -4,8 +4,8 @@ import AVFoundation
 typealias Seconds = Double
 
 struct FileData {
-    let metaData: Metadata
-    let files: [URL]
+    var metaData = Metadata()
+    var files: [URL]
 
     var combinedTrackLength: Seconds  {
         return files.reduce(0, { (total, url) -> Double in
@@ -14,13 +14,18 @@ struct FileData {
         })
     }
 
-    var sortedFiles: [URL] {
+
+    init(files: [URL]) {
+        self.files = FileData.sortFiles(files)
+    }
+
+    private static func sortFiles(_ files: [URL]) -> [URL] {
         return files.sorted(by: { $0.absoluteString.compare($1.absoluteString,
                                                             options: .numeric) == .orderedAscending })
     }
 
-    init(files: [URL], metaData: Metadata) {
-        self.files = files
-        self.metaData = metaData
+    public mutating func moveFile(from originalIndex: Int, to destinationIndex: Int) {
+        files.move(from: originalIndex, to: destinationIndex)
+        print(files.map { $0.lastPathComponent})
     }
 }

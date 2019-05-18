@@ -2,10 +2,17 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
     lazy var importerViewController = ImporterViewController.init(nibName: "ImporterViewController", bundle: nil)
-    lazy var metadataViewController = MetadataViewController(nibName: "MetadataView", bundle: nil)
+    lazy var metadataViewController: MetadataViewController = { [unowned self] in
+        let vc = MetadataViewController(nibName: "MetadataView", bundle: nil)
+        guard let fileData = self.fileData else {
+            fatalError("Files improperly imported")
+        }
+        vc.delegate = self
+        vc.configure(fileData)
+        return vc
+    }()
     lazy var progressViewController = ProgressViewController(nibName: "ProgressViewController", bundle: nil)
-    var files = [URL]()
-    var fileData: FileData!
+    var fileData: FileData?
     var mp3Joiner: AudioConcatenator!
     
     override func windowDidLoad() {
@@ -16,7 +23,6 @@ class MainWindowController: NSWindowController {
     func setup() {
         loadView(importerViewController)
         importerViewController.delegate = self
-        metadataViewController.delegate = self
     }
     
     func loadView(_ viewController: NSViewController) {
@@ -34,7 +40,7 @@ class MainWindowController: NSWindowController {
 // MARK: - Importer View Controller Delegate
 extension MainWindowController: ImporterViewControllerDelegate {
     func didReceiveFiles(_ files: [URL]) {
-        self.files = files
+        fileData = FileData(files: files)
         loadView(metadataViewController)
     }
 }
@@ -42,10 +48,12 @@ extension MainWindowController: ImporterViewControllerDelegate {
 // MARK: - Metadata View Delegate
 extension MainWindowController: MetadataViewDelegate {
     func didTapExport(metadata: Metadata) {
+        guard let fileData = fileData else {
+            fatalError("Improperly imported files")
+        }
         loadView(progressViewController)
-        fileData            = FileData(files: files, metaData: metadata)
-        mp3Joiner           = AudioConcatenator(fileData)
-        mp3Joiner.delegate  = self
+        mp3Joiner          = AudioConcatenator(fileData)
+        mp3Joiner.delegate = self
         mp3Joiner.perform()
     }
 }
