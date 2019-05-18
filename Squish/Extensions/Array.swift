@@ -5,3 +5,9 @@ extension Array where Element : Hashable {
         return Array(Set(self))
     }
 }
+
+extension Array where Element: Equatable {
+    mutating func move(from oldIndex: Int, to newIndex: Int) {
+        self.insert(self.remove(at: oldIndex), at: newIndex)
+    }
+}

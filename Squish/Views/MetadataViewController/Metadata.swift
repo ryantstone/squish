@@ -2,9 +2,9 @@ import Cocoa
 
 struct Metadata {
     var albumArt: URL?
-    var titleText    = ""
-    var authorText   = ""
-    var narratorText = ""
+    var titleText: String?
+    var authorText: String?
+    var narratorText: String?
     private (set) var saveLocation: URL?
 
     public mutating func addAlbumArt(_ url: URL) {
